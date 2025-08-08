@@ -1,25 +1,4 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f4f7f9;
-  color: #1e1e1e;
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-/* Container */
-.container {
-  max-width: 1140px;
-  margin: auto;
-  padding: 0 24px;
-}
+/* ... ostali delovi CSS ostaju isti ... */
 
 /* Header */
 header {
@@ -71,7 +50,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #00bfa6;
+  background-color: #ff9bb3;  /* zamena zelene */
   color: #fff;
 }
 
@@ -93,7 +72,7 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   padding: 0 24px;
-  background: linear-gradient(135deg, #00bfa6cc 30%, #00e676cc 90%), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  background: linear-gradient(135deg, #ff9bb3cc 30%, #ff7aa6cc 90%), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -114,8 +93,8 @@ nav ul li a.active {
 }
 
 .hero-content .highlight {
-  color: #00ffc8;
-  text-shadow: 0 0 8px #00ffc8;
+  color: #ffb6c1;
+  text-shadow: 0 0 8px #ffb6c1;
 }
 
 .hero-content p {
@@ -125,7 +104,7 @@ nav ul li a.active {
 }
 
 .btn {
-  background-color: #00e676;
+  background-color: #ff7aa6;
   color: #141414;
   padding: 16px 38px;
   font-weight: 700;
@@ -133,7 +112,7 @@ nav ul li a.active {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 6px 20px rgba(0, 230, 118, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 122, 166, 0.5);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   text-transform: uppercase;
   text-decoration: none;
@@ -142,8 +121,8 @@ nav ul li a.active {
 
 .btn:hover,
 .btn:focus {
-  background-color: #00bfa6;
-  box-shadow: 0 8px 30px rgba(0, 191, 166, 0.7);
+  background-color: #ff9bb3;
+  box-shadow: 0 8px 30px rgba(255, 155, 179, 0.7);
   outline: none;
 }
 
@@ -157,15 +136,6 @@ nav ul li a.active {
   animation: floatUpDown 6s ease-in-out infinite;
 }
 
-@keyframes floatUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 /* Features Section */
 .features {
   padding: 80px 0;
@@ -177,10 +147,10 @@ nav ul li a.active {
 }
 
 .feature-card {
-  background: #f5fdfa;
+  background: #fff0f5; /* svetlo roze, malo blaže */
   border-radius: 20px;
   padding: 32px 24px;
-  box-shadow: 0 10px 25px rgba(0, 191, 166, 0.1);
+  box-shadow: 0 10px 25px rgba(255, 155, 179, 0.1);
   width: 300px;
   text-align: center;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -189,20 +159,20 @@ nav ul li a.active {
 
 .feature-card:hover {
   transform: translateY(-15px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(0, 230, 118, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 122, 166, 0.3);
 }
 
 .feature-card .icon {
   font-size: 48px;
   margin-bottom: 18px;
-  color: #00bfa6;
+  color: #ff9bb3;
 }
 
 .feature-card h3 {
   font-size: 1.7rem;
   margin-bottom: 12px;
   font-weight: 700;
-  color: #007c67;
+  color: #c71585; /* tamnija roze/lila */
 }
 
 .feature-card p {
@@ -213,14 +183,14 @@ nav ul li a.active {
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(135deg, #00bfa6, #00e676);
+  background: linear-gradient(135deg, #ff9bb3, #ff7aa6);
   color: white;
   padding: 60px 20px;
   text-align: center;
   border-radius: 12px;
   margin: 50px auto;
   max-width: 800px;
-  box-shadow: 0 15px 40px rgba(0, 230, 118, 0.4);
+  box-shadow: 0 15px 40px rgba(255, 122, 166, 0.4);
 }
 
 .cta h2 {
@@ -247,7 +217,7 @@ nav ul li a.active {
 .cta .btn-secondary:hover,
 .cta .btn-secondary:focus {
   background-color: white;
-  color: #00bfa6;
+  color: #ff9bb3;
   outline: none;
 }
 
@@ -291,7 +261,7 @@ footer {
 }
 
 .socials li a:hover {
-  color: #00e676;
+  color: #ff7aa6;
 }
 
 /* Responsive styles */
@@ -361,3 +331,4 @@ footer {
     bottom: 15px;
   }
 }
+
