@@ -7,6 +7,103 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    /* Center and style the page header */
+    .page-header {
+      max-width: 800px;
+      margin: 60px auto 40px;
+      text-align: center;
+      color: #ff9bb3;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      letter-spacing: 0.12em;
+      text-shadow: 0 3px 10px rgba(255, 155, 179, 0.7);
+      user-select: none;
+      position: relative;
+    }
+    .page-header::after {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff7aa6, #ff9bb3);
+      margin: 18px auto 0;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff9bb3;
+    }
+    .page-header p {
+      font-size: 1.25rem;
+      color: #555;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    /* Services list styling */
+    .services-list {
+      max-width: 1140px;
+      margin: 0 auto 80px;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .service-card {
+      background: #fff0f5;
+      border-radius: 20px;
+      padding: 30px 24px;
+      box-shadow: 0 12px 35px rgba(255, 122, 166, 0.25);
+      cursor: default;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .service-card:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 0 25px 50px rgba(255, 122, 166, 0.5);
+    }
+
+    .service-card .icon {
+      font-size: 48px;
+      margin-bottom: 18px;
+      color: #ff9bb3;
+      filter: drop-shadow(0 0 4px #ff9bb3);
+    }
+
+    .service-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #c71585;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .service-card {
+        padding: 24px 18px;
+      }
+      .page-header {
+        font-size: 2.2rem;
+      }
+      .page-header p {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Footer centering */
+    footer .footer-content {
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,12 +123,12 @@
   </div>
 </header>
 
-<section class="page-header">
+<section class="page-header" aria-label="Our Services heading and intro">
   <h2>Our Services</h2>
   <p>Comprehensive solutions to elevate your digital presence</p>
 </section>
 
-<section class="container services-list">
+<section class="container services-list" aria-label="List of services">
   <article class="service-card">
     <div class="icon">💻</div>
     <h3>Frontend Development</h3>
