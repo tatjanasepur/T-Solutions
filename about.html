@@ -7,6 +7,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    /* Override some styles locally to center and enhance About page */
+
+    .page-header {
+      max-width: 800px;
+      margin: 60px auto 40px;
+      text-align: center;
+      color: #ff9bb3;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      font-size: 2.8rem;
+      text-shadow: 0 3px 10px rgba(255, 155, 179, 0.7);
+    }
+
+    .page-header p {
+      max-width: 600px;
+      margin: 12px auto 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .content {
+      max-width: 750px;
+      margin: 0 auto 80px;
+      font-size: 1.15rem;
+      color: #333;
+      line-height: 1.6;
+      font-weight: 400;
+      padding: 0 15px;
+      text-align: center;
+      user-select: none;
+    }
+
+    /* Add subtle pink glow line under the heading */
+    .page-header::after {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff7aa6, #ff9bb3);
+      margin: 18px auto 0;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff9bb3;
+    }
+
+    /* Footer alignment fix */
+    footer .footer-content {
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,12 +78,12 @@
   </div>
 </header>
 
-<section class="page-header">
+<section class="page-header" aria-label="About T-Solutions heading and intro">
   <h2>About T<span class="dot">&#9679;</span>Solutions</h2>
   <p>We are a passionate team of web developers and designers dedicated to building next-gen digital products tailored for your business.</p>
 </section>
 
-<section class="container content">
+<section class="container content" aria-label="About T-Solutions detailed description">
   <p>Founded in 2015, T<span class="dot">&#9679;</span>Solutions combines innovation, agile methodologies, and customer-centric design to deliver scalable and maintainable web applications.</p>
   <p>With expertise across frontend, backend, DevOps, and cloud integration, we empower startups and enterprises alike.</p>
   <p>Our mission: to create digital experiences that delight users and drive business growth.</p>
