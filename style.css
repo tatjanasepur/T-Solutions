@@ -114,8 +114,9 @@ nav ul li a.active {
 }
 
 .hero-content .highlight {
-  color: #ffb6c1;
-  text-shadow: 0 0 8px #ffb6c1;
+  color: #ff4d6d;
+  text-shadow: 0 0 12px #ff4d6d, 0 0 24px #ff4d6d;
+  font-weight: 900;
 }
 
 .hero-content p {
