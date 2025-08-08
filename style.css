@@ -1,4 +1,25 @@
-/* ... ostali delovi CSS ostaju isti ... */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7f9;
+  color: #1e1e1e;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 24px;
+}
 
 /* Header */
 header {
@@ -50,7 +71,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #ff9bb3;  /* zamena zelene */
+  background-color: #ff9bb3;
   color: #fff;
 }
 
@@ -136,6 +157,15 @@ nav ul li a.active {
   animation: floatUpDown 6s ease-in-out infinite;
 }
 
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 /* Features Section */
 .features {
   padding: 80px 0;
@@ -147,7 +177,7 @@ nav ul li a.active {
 }
 
 .feature-card {
-  background: #fff0f5; /* svetlo roze, malo blaže */
+  background: #fff0f5;
   border-radius: 20px;
   padding: 32px 24px;
   box-shadow: 0 10px 25px rgba(255, 155, 179, 0.1);
@@ -172,7 +202,7 @@ nav ul li a.active {
   font-size: 1.7rem;
   margin-bottom: 12px;
   font-weight: 700;
-  color: #c71585; /* tamnija roze/lila */
+  color: #c71585;
 }
 
 .feature-card p {
