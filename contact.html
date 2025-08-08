@@ -7,6 +7,133 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    /* Center and style page header */
+    .page-header {
+      max-width: 800px;
+      margin: 60px auto 40px;
+      text-align: center;
+      color: #ff9bb3;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      letter-spacing: 0.12em;
+      text-shadow: 0 3px 10px rgba(255, 155, 179, 0.7);
+      user-select: none;
+      position: relative;
+    }
+    .page-header::after {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff7aa6, #ff9bb3);
+      margin: 18px auto 0;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff9bb3;
+    }
+    .page-header p {
+      font-size: 1.25rem;
+      color: #555;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    /* Contact form container */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto 80px;
+      padding: 0 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 14px 20px;
+      border-radius: 12px;
+      border: 2px solid #ff9bb3;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #fff0f5;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+      box-shadow: 0 4px 10px rgba(255, 155, 179, 0.15);
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #ff7aa6;
+      box-shadow: 0 0 12px #ff7aa6;
+      background: #fff5f9;
+    }
+
+    textarea {
+      min-height: 140px;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      align-self: center;
+      background-color: #ff7aa6;
+      color: #141414;
+      padding: 16px 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 30px rgba(255, 122, 166, 0.6);
+      text-transform: uppercase;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      width: fit-content;
+      letter-spacing: 0.08em;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #ff9bb3;
+      box-shadow: 0 12px 40px rgba(255, 155, 179, 0.9);
+      outline: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .page-header {
+        font-size: 2.2rem;
+      }
+      .page-header p {
+        font-size: 1.1rem;
+      }
+      .contact-form {
+        padding: 0 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 0.95rem;
+        padding: 12px 16px;
+      }
+      .btn-primary {
+        padding: 14px 38px;
+        font-size: 1rem;
+      }
+    }
+
+    /* Footer centering */
+    footer .footer-content {
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,12 +153,12 @@
   </div>
 </header>
 
-<section class="page-header">
+<section class="page-header" aria-label="Contact page header">
   <h2>Get In Touch</h2>
   <p>Have a project or idea? We'd love to hear from you!</p>
 </section>
 
-<section class="container contact-form">
+<section class="container contact-form" aria-label="Contact form section">
   <form>
     <input type="text" placeholder="Your Name" required />
     <input type="email" placeholder="Your Email" required />
@@ -49,4 +176,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
